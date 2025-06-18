@@ -1,0 +1,17 @@
+.program detect_pulse
+
+; Assumes:
+; - Pin 2 - 4,5 = pulse input
+; - Pin  0 - 2,3 = gate/control pin
+; - pin base in C must include both
+
+start:
+    wait 1 pin 2           ; Wait for rising edge on pulse input
+    ;wait 1 pin 0
+    jmp pin do_push                       ;jmp pin do_push     ; 
+    jmp do_push     ;jmp start              ; Otherwise, skip
+
+do_push:
+    in x, 32               ; Dummy value (timestamp or counter)
+    push block
+    jmp start
