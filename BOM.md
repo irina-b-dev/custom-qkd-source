@@ -93,3 +93,16 @@ For now
 | U3                        | Analog Devices          | AD8605    | integrated circuit |       |          |      |     |     |
 |                           |                         |           |                    |       |          |      |     |     |
 
+
+For Laser Driver
+
+| Reference | Value          | Datasheet                                                                                                     | Footprint                    | Qty |
+| --------- | -------------- | ------------------------------------------------------------------------------------------------------------- | ---------------------------- | --- |
+| A1        | SC0918         | https://datasheets.raspberrypi.com/picow/pico-w-datasheet.pdf                                                 | Raspberry Pi:MODULE_SC0918   | 1   |
+| D1        | BZV55B3V6      | https://assets.nexperia.com/documents/data-sheet/BZV55_SER.pdf                                                | Diode_SMD:D_MiniMELF         | 1   |
+| IC1       | UCC27531DBVT   | http://www.ti.com/lit/ds/symlink/ucc27531.pdf                                                                 | MyMegaLib:SOT95P280X145-6N   | 1   |
+| LD1       | PLT5_510       | https://look.ams-osram.com/m/2562f8ca3a03a793/original/PLT5-510.pdf                                           | OptoDevice:LaserDiode_TO56-3 | 1   |
+| Q1        | BSC123N08NS3_G | https://www.infineon.com/dgdl/Infineon-BSC123N08NS3G-DS-v02_05-en.pdf?fileId=db3a30431add1d95011ae80eb8555625 | MyMegaLib:PG-TDSON-8         | 1   |
+| R1,R2     | 5              | ~                                                                                                             |                              | 2   |
+| R3        | 300            | ~                                                                                                             |                              | 1   |
+|           |                |                                                                                                               |                              |     |
